@@ -220,3 +220,5 @@ __marimo__/
 # Ignore directory
 data/
 *.pkl
+.virtual_documents/
+.ipynb_checkpoints/

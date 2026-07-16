@@ -1,0 +1,18 @@
+% TabularX modifications
+\newcommand\setrow[1]{\gdef\rowmac{#1}#1\ignorespaces}
+\def\bf#1{$\boldsymbol{#1}$}
+\newcommand\clearrow{\global\let\rowmac\relax}
+% Redefine the bibliography heading to an empty string
+\defbibheading{myheading}[]{}
+% Redefine the string for "urlseen"
+\DefineBibliographyStrings{german}{%
+  urlseen = {Abgerufen am},
+}
+%\renewcommand{\arraystretch}{1} % Adjust the value to increase/decrease the cell height
+\newcommand\mystrut[2]{\vrule height #1 depth #2 width 0pt} % creates strut
+% sets the default font to Times New Roman for the entire document
+\renewcommand{\rmdefault}{ptm}
+% set date separator
+\renewcommand{\dateseparator}{.}
+% define a command for highlighting equations
+\newcommand{\highlight}[1]{\colorbox{yellow}{$\displaystyle #1$}}
